@@ -56,7 +56,7 @@ print('val_data =', len(val_data))
 
 #Define model
 from efficientnet_pytorch import EfficientNet
-model = EfficientNet.from_name('efficientnet-b4')
+model = EfficientNet.from_name('efficientnet-b0')
 model._fc = nn.Linear(model._fc.in_features, 2)
 model.to(device)
 
